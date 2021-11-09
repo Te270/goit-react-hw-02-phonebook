@@ -5,7 +5,7 @@ import s from './App.module.css';
 import Section from './Section';
 import Form from './Form';
 import Contacts from './Contacts';
-import ContactsFilter from './Contacts/ContactsFilter';
+import ContactsFilter from './ContactsFilter/ContactsFilter';
 
 export default class App extends Component {
   state = {

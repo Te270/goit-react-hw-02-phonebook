@@ -23,7 +23,14 @@ const Contacts = ({ contacts, onDelete }) => {
 };
 
 Contacts.propTypes = {
-  contacts: PropTypes.arrayOf(PropTypes.shape).isRequired,
+  contacts: PropTypes.arrayOf(
+    PropTypes.shape({
+      name: PropTypes.string.isRequired,
+      number: PropTypes.string.isRequired,
+      id: PropTypes.string.isRequired,
+    }),
+  ).isRequired,
+  onDelete: PropTypes.func.isRequired,
 };
 
 export default Contacts;
